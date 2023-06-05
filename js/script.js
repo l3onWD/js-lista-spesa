@@ -17,6 +17,19 @@ console.log('----------- INIT -----------');
 const productsList = ['pane', 'latte', 'uova', 'zucchero', 'arance'];
 
 
+//*** DOM ELEMENTS ***//
+const shoppingListElem = document.getElementById('shopping-list');
+
+
+// ! Log Data
+console.log('### Elenco dei prodotti:');
+console.table(productsList);
+console.log('');
+console.log('### Elmenti DOM:');
+console.log('Shopping List:', shoppingListElem);
+
+
+
 /* -----------------------------------------
 * LOGIC
 -------------------------------------------*/
