@@ -59,7 +59,10 @@ while (i < productsList.length) {
     const productItem = productsList[i];
 
     // Create list item
-    productItems += `<li class="list-group-item">${productItem}</li>`;
+    productItems += `<li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" id="list-item-${i+1}">
+        <label class="form-check-label" for="list-item-${i+1}">${productItem}</label>
+    </li>`;
 
     // Increment Index
     i++
