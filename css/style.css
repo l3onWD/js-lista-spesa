@@ -31,6 +31,12 @@ body {
 }
 
 
+/*** SHOPPING LIST ***/
+#shopping-list li.is-done label {
+    text-decoration: line-through;
+}
+
+
 
 /* -----------------------------------------
 ? RESPONSIVE

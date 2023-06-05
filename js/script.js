@@ -72,4 +72,29 @@ while (i < productsList.length) {
 shoppingListElem.innerHTML = productItems;
 
 
+//*** DELETE ITEMS ON CLICK ***//
+// Get dynamic shopping items
+const shoppingItemsElem = shoppingListElem.querySelectorAll('li');
+
+// Cicle items list
+for(let i = 0; i < shoppingItemsElem.length; i++) {
+
+    // Get current item
+    const shoppingItemElem = shoppingItemsElem[i];
+
+    // On click event
+    shoppingItemElem.addEventListener('click', function () {
+
+        // Get checkbox status
+        const isChecked = shoppingItemElem.querySelector('input').checked;
+        
+        // Remove style class
+        shoppingItemElem.classList.remove('is-done');
+
+        // Add class based on checkbox status
+        if(isChecked) shoppingItemElem.classList.add('is-done');
+    });
+}
+
+
 console.log('----------- DONE -----------');
