@@ -1,7 +1,16 @@
 /* -----------------------------------------
 * VARIABLES
 -------------------------------------------*/
+:root {
+    /* Palette */
+    --col-blue-300: rgba(0, 0, 255, 0.3);
 
+    /* Misc */
+    --sheet-margin-vertical: 80px;
+    --sheet-margin-left: 55px;
+    --sheet-margin-right: calc(var(--sheet-margin-left) * 2);
+    --list-margin-left: calc(var(--sheet-margin-left) + 10px);
+}
 
 
 /* -----------------------------------------
@@ -21,18 +30,47 @@ body {
 /* -----------------------------------------
 ? ELEMENTS
 -------------------------------------------*/
-/*** CUSTOM CARD ***/
-.card-header {
+/*** SHOPPING CARD ***/
+#shopping-card {
+    position: relative;
+}
+
+/* Sheet */
+#shopping-card .card-header {
     padding-top: 36px;
+    padding-left: var(--list-margin-left);
 }
 
-.card-footer {
-    height: 80px;
+#shopping-card .card-footer {
+    height: var(--sheet-margin-vertical);
 }
 
+#shopping-card::after,
+#shopping-card::before {
+    content: '';
 
-/*** SHOPPING LIST ***/
-#shopping-list li.is-done label {
+    position: absolute;
+    width: 2px;
+
+    background-color: var(--col-blue-300);
+
+    z-index: 1;
+}
+
+#shopping-card::before {
+    inset: 0 auto 0 var(--sheet-margin-left);
+}
+
+#shopping-card::after {
+    inset: 0 var(--sheet-margin-right) 0 auto;
+}
+
+#shopping-card li {
+    padding-left: var(--list-margin-left);
+}
+
+/* Deleted item */
+#shopping-card li.is-done label {
     text-decoration: line-through;
 }
 
