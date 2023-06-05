@@ -1,12 +1,3 @@
-/*
-Data una lista della spesa, stampare sulla pagina (anche brutalmente, basta che si vedano) gli elementi della lista individualmente con un ciclo while.
-
-Consigli:
-    -Facciamo un primo giro col for, in modo da sentirci confident sul risultato della stampa, poi trasformiamo il for in un while
-    - Ricordiamoci di inizializzare la variabile di contatore prima dell'inizio del ciclo while
-    - Ricordiamoci di incrementare il contatore all'interno ciclo while per evitare di cascare in un loop infinito.
-*/
-
 /* -----------------------------------------
 * INIT
 -------------------------------------------*/
@@ -27,7 +18,7 @@ console.table(productsList);
 console.log('');
 console.log('### Elmenti DOM:');
 console.log('Shopping List:', shoppingListElem);
-
+console.log('');
 
 
 /* -----------------------------------------
@@ -72,6 +63,12 @@ while (i < productsList.length) {
 shoppingListElem.innerHTML = productItems;
 
 
+// ! Log List Element
+console.log('### Elementi inseriti:');
+console.log(productItems);
+console.log('');
+
+
 //*** DELETE ITEMS ON CLICK ***//
 // Get dynamic shopping items
 const shoppingItemsElem = shoppingListElem.querySelectorAll('li');
@@ -82,7 +79,7 @@ for(let i = 0; i < shoppingItemsElem.length; i++) {
     // Get current item
     const shoppingItemElem = shoppingItemsElem[i];
 
-    // On click event
+    // Listen on click event
     shoppingItemElem.addEventListener('click', function () {
 
         // Get checkbox status
