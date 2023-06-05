@@ -13,7 +13,8 @@ Consigli:
 console.log('----------- INIT -----------');
 
 
-//***  ***//
+//*** DATA ***//
+const productsList = ['pane', 'latte', 'uova', 'zucchero', 'arance'];
 
 
 /* -----------------------------------------
