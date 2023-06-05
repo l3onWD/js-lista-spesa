@@ -36,6 +36,21 @@ console.log('Shopping List:', shoppingListElem);
 console.log('----------- LOGIC -----------');
 
 
+//*** SHOW SHOPPING LIST ***//
+let productItems = '';
+
+// For cicle
+for (let i = 0; i < productsList.length; i++) {
+
+    // Get current product
+    const productItem = productsList[i];
+
+    // Create list item
+    productItems += `<li>${productItem}</li>`;
+}
+
+// Insert HTML inside the page
+shoppingListElem.innerHTML = productItems;
 
 
 console.log('----------- DONE -----------');
