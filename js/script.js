@@ -50,7 +50,7 @@ while (i < productsList.length) {
     const productItem = productsList[i];
 
     // Create list item
-    productItems += `<li class="list-group-item d-flex">
+    productItems += `<li class="list-group-item d-flex align-items-center">
         <input class="form-check-input me-2" type="checkbox" value="" id="list-item-${i+1}">
         <label class="form-check-label flex-grow-1" for="list-item-${i+1}">${productItem}</label>
     </li>`;
