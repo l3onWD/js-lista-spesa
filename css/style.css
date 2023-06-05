@@ -21,8 +21,14 @@ body {
 /* -----------------------------------------
 ? ELEMENTS
 -------------------------------------------*/
+/*** CUSTOM CARD ***/
+.card-header {
+    padding-top: 36px;
+}
 
-
+.card-footer {
+    height: 80px;
+}
 
 
 
