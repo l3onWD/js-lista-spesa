@@ -59,8 +59,17 @@ body {
     inset: 0 var(--sheet-margin-right) 0 auto;
 }
 
+/* Items */
 #shopping-card li {
-    padding-left: var(--list-margin-left);
+    padding: 0 0 0 var(--list-margin-left);
+}
+
+#shopping-card li label {
+    line-height: 40px;
+}
+
+#shopping-card li:hover input {
+    border: 2px solid rgba(255, 0, 0, 0.3);
 }
 
 /* Deleted item */
