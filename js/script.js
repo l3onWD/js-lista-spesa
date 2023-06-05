@@ -46,7 +46,7 @@ for (let i = 0; i < productsList.length; i++) {
     const productItem = productsList[i];
 
     // Create list item
-    productItems += `<li>${productItem}</li>`;
+    productItems += `<li class="list-group-item">${productItem}</li>`;
 }
 
 // Insert HTML inside the page
