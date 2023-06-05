@@ -40,13 +40,29 @@ console.log('----------- LOGIC -----------');
 let productItems = '';
 
 // For cicle
-for (let i = 0; i < productsList.length; i++) {
+/*for (let i = 0; i < productsList.length; i++) {
 
     // Get current product
     const productItem = productsList[i];
 
     // Create list item
     productItems += `<li class="list-group-item">${productItem}</li>`;
+}
+*/
+
+// While cicle
+let i = 0;
+
+while (i < productsList.length) {
+
+    // Get current product
+    const productItem = productsList[i];
+
+    // Create list item
+    productItems += `<li class="list-group-item">${productItem}</li>`;
+
+    // Increment Index
+    i++
 }
 
 // Insert HTML inside the page
